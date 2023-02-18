@@ -53,9 +53,9 @@ class TestTriangleUnit(unittest.TestCase):
         second = Triangle(3, 4, 5)
         self.assertTrue(second.is_right_angled())
 
-    @unittest.skip('incorrect work, no sorting')
+    @unittest.skip('bug in function')
     def test_right_angled1(self):
-        second = Triangle(3, 4, 5)
+        second = Triangle(5, 4, 3)
         self.assertTrue(second.is_right_angled())
 
     def test_equilateral_triangle(self):
